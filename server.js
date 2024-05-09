@@ -78,3 +78,73 @@ const userProfile = {
 };
 
 console.log(userProfile);
+
+//Exercise 7
+
+//Exercise 8
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+function sentence(noun = 'cat', adjective = 'white') {
+    return 'The ' + noun + ' is  ' + adjective + '.';
+}
+
+sentence();
+
+console.log(sentence());
+
+//Exercise 9
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+// if (pizza === 'tasty') {
+//   console.log('yum');
+// } else {
+//   console.log('yuck');
+// }
+
+// Your code here
+let goodPizza = pizza === 'tasty' ? 'yum' : 'yuck';
+
+console.log(goodPizza);
+
+//Exercise 10
+// Simulated language configuration (change this variable to test)
+const localLangConfig = null || 'fr'; // Change to 'es', 'fr', etc., or keep it null
+
+// Create a variable called LANG
+// Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+const LANG = 'en';
+// Log the result
+console.log('Language setting:', LANG);
+
+// Simulated user theme preference (change this variable to test)
+const userSavedTheme = 'dark' && 'contrast'; // Change to 'dark', 'contrast', etc., or keep it null
+
+// Create a variable called USER_THEME
+// Assign USER_THEME the value of userSavedTheme or 'light' as a default
+const USER_THEME = userSavedTheme;
+// Your code here
+
+// Log the result
+console.log('User theme setting:', USER_THEME);
+
+//Exercise 11
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+    name: 'Alice',
+  };
+  
+let cat = adventurer.cat?.age; // Your code here
+  
+console.log(cat);
